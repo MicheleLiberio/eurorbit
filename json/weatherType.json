@@ -1,0 +1,77 @@
+[
+	{
+		"description": "Clear",
+		"icon": "clear.png",
+		"code": "clear"
+	},
+	{
+		"description": "Partly Cloudy",
+		"icon": "pcloudy.png",
+		"code": "pcloudy"
+	},
+	{
+		"description": "Cloudy",
+		"icon": "mcloudy.png",
+		"code": "mcloudy"
+	},
+	{
+		"description": "Very Cloudy",
+		"icon": "cloudy.png",
+		"code": "cloudy"
+	},
+	{
+		"description": "Humid",
+		"icon": "humid.png",
+		"code": "humid"
+	},
+	{
+		"description": "Rain",
+		"icon": "lightrain.png",
+		"code": "lightrain"
+	},
+	{
+		"description": "Occasional showers",
+		"icon": "oshower.png",
+		"code": "oshower"
+	},
+	{
+		"description": "Isolated showers",
+		"icon": "ishower.png",
+		"code": "ishower"
+	},
+	{
+		"description": "Light or occasional snow",
+		"icon": "lightsnow.png",
+		"code": "lightsnow"
+	},
+	{
+		"description": "Rain",
+		"icon": "rain.png",
+		"code": "rain"
+	},
+	{
+		"description": "Snow",
+		"icon": "snow.png",
+		"code": "snow"
+	},
+	{
+		"description": "Mixed",
+		"icon": "rainsnow.png",
+		"code": "rainsnow"
+	},
+	{
+		"description": "Thunderstorm possible",
+		"icon": "tsrainsnow.png",
+		"code": "tsrainsnow"
+	},
+	{
+		"description": "Thunderstorm",
+		"icon": "tstorm.png",
+		"code": "tstorm"
+	},
+	{
+		"description": "Windy",
+		"icon": "windy.png",
+		"code": "windy"
+	}
+]
