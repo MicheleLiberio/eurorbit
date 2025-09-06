@@ -7,6 +7,9 @@ const select=document.getElementById('select-cities');
 let gettingForecast=document.getElementById("getting-forecast");
 gettingForecast.style.display="none";
 
+let weatherError=document.getElementById("weather-error");
+weatherError.style.display="none";
+
 function getDate(date) {
 	let year=date.slice(0,4);
 	let month=date.slice(4,6);
@@ -89,6 +92,9 @@ function buildWeatherInfo(data) {
 }
 
 async function getWeatherData(lat,lon) {
+	let weatherError=document.getElementById("weather-error");
+	weatherError.style.display="none";
+	weatherError.style.display="none";
 	const url=`http://www.7timer.info/bin/api.pl?lon=${lon}&lat=${lat}&product=civillight&output=json`;
 	try {
 		const response=await fetch(url);
@@ -100,6 +106,10 @@ async function getWeatherData(lat,lon) {
 		console.log(result);
 		buildWeatherInfo(result)
 	} catch(error) {
+		gettingForecast.style.display="none";
+		weatherError.style.display="flex";
+
+		//buildWeatherError();
 		console.error(error.message);
 	}
 }
@@ -123,6 +133,7 @@ fetch('../json/weatherCities.json')
 // Evento per sapere quale opzione è stata scelta
 select.addEventListener('change',() => {
 	$('div[id^="id-weather-"]').remove();
+	document.getElementById("weather-start").style.display = "none";
 	gettingForecast.style.display="block";
 
 	let object=JSON.parse(select.value);
