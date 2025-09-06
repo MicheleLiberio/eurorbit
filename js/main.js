@@ -1,4 +1,4 @@
-import weatherType from "../json/weatherType.json" with {type: "json"};
+import weatherType from "https://micheleliberio.github.io/eurorbit-coursera/json/weatherType.json" with {type: "json"};
 
 
 
@@ -114,7 +114,7 @@ async function getWeatherData(lat,lon) {
 	}
 }
 
-fetch('../json/weatherCities.json')
+fetch('https://micheleliberio.github.io/eurorbit-coursera/json/weatherCities.json')
 	.then(res => {
 		if(!res.ok) throw new Error("Errore nel caricamento del JSON");
 		return res.json();
