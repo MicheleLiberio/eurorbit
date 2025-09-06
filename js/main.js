@@ -95,7 +95,7 @@ async function getWeatherData(lat,lon) {
 	let weatherError=document.getElementById("weather-error");
 	weatherError.style.display="none";
 	weatherError.style.display="none";
-	const url=`http://www.7timer.info/bin/api.pl?lon=${lon}&lat=${lat}&product=civillight&output=json`;
+	const url=`https://www.7timer.info/bin/api.pl?lon=${lon}&lat=${lat}&product=civillight&output=json`;
 	try {
 		const response=await fetch(url);
 		if(!response.ok) {
