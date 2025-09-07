@@ -46,7 +46,7 @@ function buildWeatherInfo(data) {
 			dateDiv.innerText=getDate(date);
 
 			var iconDiv=document.createElement('img');
-			iconDiv.src=`https://github.com/MicheleLiberio/eurorbit-coursera/blob/main/images/${weatherObject.icon}`;
+			iconDiv.src=`../images/${weatherObject.icon}`;
 
 			upperDiv.append(dateDiv);
 			upperDiv.append(iconDiv);
