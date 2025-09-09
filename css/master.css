@@ -2,11 +2,16 @@ body {
     /*background-color: #d7d7d7;*/
     background-image: url("../images/clouds-49520_1920.jpg");
     color: black;
+    overflow-x: hidden;
 }
 
 .title {
     color: darkblue;
     font-size: 50px;
+}
+
+.subtitle a {
+    color: blue;
 }
 
 .subtitle {
@@ -74,4 +79,6 @@ body {
     /*height: 50%;*/
 }
 
-.copyright-text {}
+.copyright-text {
+    color: darkblue;
+}
