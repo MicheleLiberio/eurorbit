@@ -3,6 +3,7 @@ body {
     background-image: url("../images/clouds-49520_1920.jpg");
     color: black;
     overflow-x: hidden;
+    height: 100vh;
 }
 
 .title {
