@@ -1,4 +1,4 @@
-import weatherType from "https://micheleliberio.github.io/eurorbit-coursera/json/weatherType.json" with {type: "json"};
+import weatherType from "https://micheleliberio.github.io/eurorbit/json/weatherType.json" with {type: "json"};
 
 
 
@@ -44,7 +44,7 @@ function buildWeatherInfo(data) {
 			dateDiv.innerText=getDate(date);
 
 			var iconDiv=document.createElement('img');
-			iconDiv.src=`https://micheleliberio.github.io/eurorbit-coursera/images/${weatherObject.icon}`;
+			iconDiv.src=`https://micheleliberio.github.io/eurorbit/images/${weatherObject.icon}`;
 
 			upperDiv.append(dateDiv);
 			upperDiv.append(iconDiv);
@@ -132,7 +132,7 @@ async function getWeatherData(lat,lon) {
 	}
 }
 
-fetch('https://micheleliberio.github.io/eurorbit-coursera/json/weatherCities.json')
+fetch('https://micheleliberio.github.io/eurorbit/json/weatherCities.json')
 	.then(res => {
 		if(!res.ok) throw new Error("Errore nel caricamento del JSON");
 		return res.json();
