@@ -33,7 +33,6 @@ function buildWeatherInfo(data) {
 
 		let weatherObject=weatherType.find(weatherTyp => weatherTyp.code===dat["weather"]);
 		if(weatherObject!=null) {
-			//mainDiv.innerText=weatherObject.description;
 
 			var upperDiv=document.createElement('div');
 			upperDiv.className="upper-tab";
@@ -56,29 +55,21 @@ function buildWeatherInfo(data) {
 			var descriptionDiv=document.createElement('div');
 			descriptionDiv.innerText=weatherObject.description;
 			descriptionDiv.className="weather-description my-3";
-			//lowerDiv.className="row";
-			//lowerDiv.innerText=weatherObject.description;
-			//lowerDiv.className="my-3";
 			lowerDiv.appendChild(descriptionDiv);
 
 			let temperatures=dat['temp2m'];
 
 			if(temperatures!=null) {
-				//var temperaturesDiv=document.createElement('div');
 				var maxTemperature=document.createElement('div');
 				var minTemperature=document.createElement('div');
 
-				//temperaturesDiv.innerText="Temperatures"
 				maxTemperature.innerText=`Max: ${temperatures['max']} °C`
 				minTemperature.innerText=`Min: ${temperatures['min']} °C`
 
-				//lowerDiv.appendChild(temperaturesDiv);
 				lowerDiv.appendChild(maxTemperature);
 				lowerDiv.appendChild(minTemperature);
 
 			}
-
-
 			mainDiv.append(upperDiv);
 			mainDiv.append(lowerDiv);
 
@@ -148,7 +139,6 @@ fetch('https://micheleliberio.github.io/eurorbit/json/weatherCities.json')
 	})
 	.catch(err => console.error("Errore:",err));
 
-// Evento per sapere quale opzione è stata scelta
 select.addEventListener('change',() => {
 	$('div[id^="id-weather-"]').remove();
 	$('div[id^="weather-error"]').remove();
@@ -163,8 +153,6 @@ select.addEventListener('change',() => {
 			getWeatherData(lat,lon);
 		}
 	}
-
-	//alert(`Hai selezionato: ${select.value}`);
 });
 
 
