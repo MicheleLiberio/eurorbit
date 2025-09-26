@@ -45,17 +45,17 @@ function buildWeatherInfo(data) {
 			var iconDiv=document.createElement('img');
 			iconDiv.src=`https://micheleliberio.github.io/eurorbit/images/${weatherObject.icon}`;
 
+			var descriptionDiv = document.createElement('div');
+			descriptionDiv.innerText=weatherObject.description;
+			descriptionDiv.className="weather-description my-3";
+
 			upperDiv.append(dateDiv);
 			upperDiv.append(iconDiv);
+			upperDiv.append(descriptionDiv);
 
 
 			var lowerDiv=document.createElement('div');
-			lowerDiv.className="my-lg-4";
-
-			var descriptionDiv=document.createElement('div');
-			descriptionDiv.innerText=weatherObject.description;
-			descriptionDiv.className="weather-description my-3";
-			lowerDiv.appendChild(descriptionDiv);
+			lowerDiv.className="my-lg-4 temperatures";
 
 			let temperatures=dat['temp2m'];
 

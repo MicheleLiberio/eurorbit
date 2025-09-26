@@ -51,6 +51,16 @@ body {
         padding-bottom: 16px;
         display: flex;
         justify-content: space-between;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .weather-results {
+        padding-right: unset;
+    }
+    
+    .temperatures{
+        align-self: center;
     }
 }
 
