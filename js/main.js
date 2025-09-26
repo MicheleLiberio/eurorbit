@@ -50,7 +50,7 @@ function buildWeatherInfo(data) {
 
 
 			var lowerDiv=document.createElement('div');
-			lowerDiv.className="my-4";
+			lowerDiv.className="my-lg-4";
 
 			var descriptionDiv=document.createElement('div');
 			descriptionDiv.innerText=weatherObject.description;

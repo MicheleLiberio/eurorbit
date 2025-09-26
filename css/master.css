@@ -48,6 +48,9 @@ body {
         font-weight: 700;
         color: darkblue;
         margin-top: 20px;
+        padding-bottom: 16px;
+        display: flex;
+        justify-content: space-between;
     }
 }
 
