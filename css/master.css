@@ -62,6 +62,11 @@ body {
     
     .temperatures{
         align-self: center;
+        width: 40%;
+    }
+
+    .upper-tab{
+        width: 50%;
     }
 }
 
