@@ -27,6 +27,7 @@ body {
     display: none;
     width: 5rem; 
     height: 5rem;
+    margin-top: 50px;
 }
 
 #weather-start{
