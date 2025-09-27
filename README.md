@@ -1,10 +1,10 @@
 # Weather Forecast App
 
-A simple and responsive weather forecast application built with JavaScript, jQuery, and Bootstrap. It provides current weather information and short-term forecasts for any city using the OpenWeatherMap API.
+A simple and responsive weather forecast application built with JavaScript, jQuery, and Bootstrap. It provides current weather information and short-term forecasts for any city using the [7Timer API](https://www.7timer.info/).
 
 ## Description
 
-This web app allows users to search for a city and view real-time weather data, including temperature, humidity, wind speed, and general weather conditions. The interface is responsive and mobile-friendly thanks to Bootstrap.
+This web app allows users to search for a city and view real-time weather data, including temperature conditions. The interface is responsive and mobile-friendly thanks to Bootstrap.
 
 ## Features
 
@@ -20,7 +20,7 @@ This web app allows users to search for a city and view real-time weather data, 
 - JavaScript (ES6)
 - jQuery
 - Bootstrap 5
-- [OpenWeatherMap API](https://micheleliberio.github.io/eurorbit/)
+- [7Timer API](https://www.7timer.info/)
 
 ## Getting Started
 
