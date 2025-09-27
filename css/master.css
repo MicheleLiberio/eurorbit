@@ -84,7 +84,6 @@ body {
 .weather-tab-error{
     height: 200px;
     border-radius: 5px;
-    width: 800px;
     text-transform: uppercase;
     font-size: 20px;
     font-weight: 700;
