@@ -27,4 +27,4 @@ This web app allows users to search for a city and view real-time weather data, 
 1. **Clone the repository:**
 
 ```bash
-git clone https://github.com/MicheleLiberio/eurorbit
+git clone https://github.com/MicheleLiberio/eurorbit.git
